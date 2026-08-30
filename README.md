@@ -6,6 +6,9 @@ It uses document-grounded Agentic RAG: the system retrieves relevant passages fr
 
 > **Medical disclaimer:** HealthAgent AI is an educational and document-retrieval tool. It is not a doctor, does not diagnose conditions, and must not replace professional medical advice. Always confirm medicines, doses, and treatment decisions with a qualified clinician.
 
+<img width="1710" height="952" alt="image" src="https://github.com/user-attachments/assets/5645698e-55f4-4e6d-b53f-e450437ac108" />
+<img width="1710" height="952" alt="image" src="https://github.com/user-attachments/assets/1a2c1006-bab1-496d-8944-7658ca5b4f1c" />
+
 
 ## What it includes
 
