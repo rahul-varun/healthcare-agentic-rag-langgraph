@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What are the signs of dehydration in a child?",
+    "expected_document": "9789241548373_eng.pdf"
+  },
+  {
+    "question": "What is the WHO AWaRe classification of antibiotics?",
+    "expected_document": "AWaRe Antibiotic Book.pdf"
+  },
+  {
+    "question": "What non-surgical interventions are recommended for chronic primary low back pain?",
+    "expected_document": "WHO Chronic Low Back Pain.pdf"
+  }
+]

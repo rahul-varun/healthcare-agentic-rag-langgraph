@@ -1,0 +1,32 @@
+{
+  "per_question": [
+    {
+      "question": "What are the signs of dehydration in a child?",
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0,
+      "recall_at_k": 4.0,
+      "ndcg_at_k": 2.5177825608059994
+    },
+    {
+      "question": "What is the WHO AWaRe classification of antibiotics?",
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0,
+      "recall_at_k": 5.0,
+      "ndcg_at_k": 2.9484591188793923
+    },
+    {
+      "question": "What non-surgical interventions are recommended for chronic primary low back pain?",
+      "hit_rate": 1.0,
+      "reciprocal_rank": 1.0,
+      "recall_at_k": 5.0,
+      "ndcg_at_k": 2.9484591188793923
+    }
+  ],
+  "aggregate": {
+    "hit_rate": 1.0,
+    "reciprocal_rank": 1.0,
+    "recall_at_k": 4.666666666666667,
+    "ndcg_at_k": 2.804900266188261
+  },
+  "n_questions": 3
+}

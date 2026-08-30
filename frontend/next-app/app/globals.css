@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #06131b;
+  --foreground: #e6f4f4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: radial-gradient(circle at 75% -10%, rgba(31, 157, 176, .16), transparent 30rem), linear-gradient(135deg, #06131b, #071019 65%, #081b21);
+}
+
+.eyebrow { color: #67e8f9; font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.surface { border: 1px solid rgba(148, 163, 184, .14); border-radius: 1.25rem; background: rgba(8, 24, 34, .78); box-shadow: 0 18px 50px rgba(0, 0, 0, .16); }
+.upload-panel { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px dashed rgba(103, 232, 249, .25); border-radius: 1.25rem; background: rgba(14, 116, 144, .08); }
+.button-primary { border: 0; border-radius: .8rem; background: #a5f3fc; padding: .7rem 1rem; color: #08202a; font-size: .875rem; font-weight: 700; }
+.button-secondary { border: 1px solid rgba(148, 163, 184, .2); border-radius: .8rem; background: rgba(15, 30, 42, .75); padding: .65rem .9rem; color: #d7f9fb; font-size: .8rem; font-weight: 600; }
+.medical-markdown { color: #e2edf2; font-size: .9rem; line-height: 1.75; }
+.medical-markdown h1, .medical-markdown h2, .medical-markdown h3 { margin: 1.15rem 0 .45rem; color: #f8fafc; font-weight: 700; line-height: 1.3; }
+.medical-markdown h1 { font-size: 1.25rem; }
+.medical-markdown h2 { font-size: 1.05rem; }
+.medical-markdown h3 { font-size: .95rem; }
+.medical-markdown p { margin: .55rem 0; }
+.medical-markdown ul, .medical-markdown ol { margin: .55rem 0; padding-left: 1.35rem; }
+.medical-markdown ul { list-style: disc; }
+.medical-markdown ol { list-style: decimal; }
+.medical-markdown li { margin: .2rem 0; padding-left: .2rem; }
+.medical-markdown strong { color: #a5f3fc; font-weight: 700; }
+.medical-markdown em { color: #c4b5fd; }
+.medical-markdown blockquote { margin: .9rem 0; border-left: 3px solid #22d3ee; border-radius: .35rem; background: rgba(34, 211, 238, .08); padding: .65rem .9rem; color: #b9d5dd; }
+.medical-markdown hr { margin: 1rem 0; border-color: rgba(148, 163, 184, .18); }
+.medical-markdown code { border-radius: .35rem; background: rgba(15, 23, 42, .8); padding: .12rem .3rem; color: #a5f3fc; font-size: .82em; }
+.medical-markdown a { color: #67e8f9; text-decoration: underline; }
+.care-sidebar { background: rgba(3, 13, 21, .82); }
+.nav-link { display: flex; align-items: center; gap: .8rem; border: 1px solid transparent; border-radius: .55rem; padding: .68rem .75rem; font-size: .82rem; transition: all .18s ease; }
+.nav-link-active { position: relative; border-color: transparent; background: transparent; color: #ecfeff; font-weight: 600; box-shadow: none; }
+.nav-link-active::before { content: ""; width: 3px; height: 18px; position: absolute; left: -4px; top: 50%; transform: translateY(-50%); border-radius: 2px; background: #67e8f9; box-shadow: 0 0 10px rgba(103, 232, 249, .55); }
+.nav-glyph { display: inline-flex; width: 1.35rem; justify-content: center; color: #67e8f9; font-size: 1.15rem; line-height: 1; }
+.nav-icon { height: 1.35rem; width: 1.35rem; }
+.question-card { border: 1px solid rgba(148, 163, 184, .2); border-radius: 1.25rem; background: rgba(5, 17, 26, .8); padding: .5rem; box-shadow: 0 18px 55px rgba(0, 0, 0, .16); }
+.question-card input { border: 0; background: transparent; padding: .75rem .9rem; }
+.question-card input:focus { outline: none; }
+.search-sticky { position: sticky; top: 0; z-index: 20; margin: -1rem -1rem 0; padding: 1rem; background: rgba(6, 19, 27, .84); backdrop-filter: blur(18px); }
+.prompt-chip { border: 1px solid rgba(148, 163, 184, .13); border-radius: 999px; padding: .4rem .7rem; color: #94a3b8; font-size: .7rem; transition: all .18s ease; }
+.prompt-chip:hover { border-color: rgba(103, 232, 249, .3); color: #cffafe; background: rgba(103, 232, 249, .06); }
+.answer-card { border: 1px solid rgba(103, 232, 249, .16); border-radius: 1.35rem; background: linear-gradient(145deg, rgba(9, 30, 40, .94), rgba(6, 20, 29, .86)); box-shadow: 0 25px 70px rgba(0, 0, 0, .22); }
+.answer-icon { display: inline-flex; height: 2rem; width: 2rem; align-items: center; justify-content: center; border-radius: .75rem; background: rgba(103, 232, 249, .12); color: #a5f3fc; }
+.status-pill { border: 1px solid rgba(52, 211, 153, .2); border-radius: 999px; background: rgba(52, 211, 153, .08); padding: .35rem .65rem; color: #6ee7b7; font-size: .68rem; font-weight: 700; }
+.language-select { margin-top: .3rem; border: 0; background: transparent; padding: 0; color: #cffafe; font-size: .75rem; font-weight: 600; outline: none; }
+.language-select option { background: #081923; color: #e2edf2; }
+.document-row { border-bottom: 1px solid rgba(148, 163, 184, .08); transition: background .18s ease; }
+.document-row:last-child { border-bottom: 0; }
+.document-row:hover { background: rgba(103, 232, 249, .035); }
+.file-badge { display: inline-flex; height: 2.45rem; width: 2.45rem; flex-shrink: 0; align-items: center; justify-content: center; border-radius: .7rem; font-size: .58rem; font-weight: 800; letter-spacing: .04em; }
+.file-badge-pdf { border: 1px solid rgba(248, 113, 113, .18); background: rgba(248, 113, 113, .1); color: #fca5a5; }
+.file-badge-md { border: 1px solid rgba(103, 232, 249, .18); background: rgba(103, 232, 249, .1); color: #a5f3fc; }

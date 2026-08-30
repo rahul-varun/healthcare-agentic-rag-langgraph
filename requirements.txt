@@ -1,0 +1,48 @@
+# Backend
+fastapi
+python-multipart
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# Agent orchestration
+langgraph
+langchain
+langchain-community
+langchain-openai
+
+# Embeddings
+sentence-transformers
+
+# Vector DB
+chromadb
+qdrant-client
+
+# Sparse retrieval / reranking (cross-encoder reranking also uses sentence-transformers above)
+rank-bm25
+
+# Knowledge graph
+neo4j
+
+# Structured data
+psycopg2-binary
+sqlalchemy
+
+# Ingestion
+pypdf
+python-docx
+openpyxl
+unstructured
+markdown-it-py
+python-frontmatter
+
+# Evaluation
+ragas
+
+# Observability
+langfuse
+
+# Testing
+pytest
+httpx

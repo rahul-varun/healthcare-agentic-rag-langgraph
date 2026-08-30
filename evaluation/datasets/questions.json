@@ -1,0 +1,7 @@
+[
+  {
+    "question": "Why did revenue decline in Q3?",
+    "expected_sources": ["annual_report_2025.pdf"],
+    "expected_answer_points": ["lower international sales", "pricing pressure"]
+  }
+]
